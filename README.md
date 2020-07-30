@@ -1,18 +1,19 @@
-# Sound-Classification-Comparison
-Classify sound using Deep Learning on Tensorflow and various machine learning models.
+# Signal Classifier Using Deep Learning With TensorFlow
 
-## Features
+Classification of sound signals using Deep Learning on TensorFlow and various machine learning models.
+
+**Features**
 
 1. log = Log scale spectrogram
 2. spectrogram = spectrogram
 3. features = concat(power spectrum, log-energy, mfcc). Check featuring/features.py
 
-## Datasets
+**Datasets**
 
 1. [Urban sound](https://serv.cusp.nyu.edu/projects/urbansounddataset/urbansound8k.html)
 2. [Google dataset](https://research.googleblog.com/2017/08/launching-speech-commands-dataset.html)
 
-## Models
+**Models**
 
 #### Light Gradient Boosting
  1. log
@@ -32,11 +33,11 @@ Classify sound using Deep Learning on Tensorflow and various machine learning mo
  5. spectrogram on feed-forward
  6. spectrogram on recurrent neural network
 
-## Results
+**Results**
 
 #### Spectrogram Urban Sound
 
-* feed-forward neural network
+* Feed-forward Neural Network
 ```text
 testing accuracy: 0.463215
                   precision    recall  f1-score   support
@@ -55,7 +56,7 @@ children_playing       0.33      0.12      0.17       126
      avg / total       0.46      0.46      0.44      1101
 ```
 
-* convolutional neural network
+* Convolutional Neural Network
 ```text
 testing accuracy: 0.4
                   precision    recall  f1-score   support
@@ -172,6 +173,7 @@ avg / total       0.28      0.25      0.24     12945
 ```
 
 #### Log-spectrogram Google Dataset
+
 * LGB
 ```text
 accuracy validation set:  0.722689742775
@@ -248,6 +250,6 @@ accuracy validation set:  0.801047951731
 avg / total       0.80      0.80      0.80     12596
 ```
 
-## images
+**Images**
 
 ![alt text](images/augmentation.png)
